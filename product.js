@@ -659,4 +659,6 @@ for (let i = 0; i < Btn.length; i++) {
   });
 }
 
-function cartfunc(productsArr) {}
+function cartfunc(productsArr) {
+  alert("Added Successfully");
+}
