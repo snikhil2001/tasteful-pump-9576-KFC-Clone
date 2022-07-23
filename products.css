@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar styling */
+#navbar {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+
+#navbar > img {
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+#navbar > a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+#navbar > a > img {
+  margin-left: 100px;
+}
+
+#navbar > a:nth-child(5) {
+  margin-right: 400px;
+}
+
+#navbar > a > button {
+  padding: 15px 30px;
+  background-color: #e4002b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+}
+
+.fa-solid {
+  color: black;
+  font-size: 35px;
+  padding-right: 25px;
+  border-right: 1px solid grey;
+}
+
+/* div id name location styling starts here */
+
+#location {
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 100px;
+  z-index: 1000;
+}
+
+#location > p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.fa-map-marker-alt {
+  color: red;
+  margin-right: 10px;
+}
+
+#container {
+  width: 80%;
+  height: 5000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 138px;
+}
+
+#menu {
+  width: 15%;
+  height: 750px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#menu > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#menu > a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 530;
+  display: block;
+}
+
+#menu > a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+#menu-items {
+  width: 70%;
+  margin-top: 100px;
+}
+
+#menu-items > h1 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#cont-1,
+#cont-2,
+#cont-3,
+#cont-4,
+#cont-5,
+#cont-5,
+#cont-6,
+#cont-7,
+#cont-8,
+#cont-9,
+#cont-10,
+#cont-11,
+#cont-12 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#cont-1 > div > img,
+#cont-2 > div > img,
+#cont-3 > div > img,
+#cont-4 > div > img,
+#cont-5 > div > img,
+#cont-6 > div > img,
+#cont-7 > div > img,
+#cont-8 > div > img,
+#cont-9 > div > img,
+#cont-10 > div > img,
+#cont-11 > div > img,
+#cont-12 > div > img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+#cont-1 > div > img:hover,
+#cont-2 > div > img:hover,
+#cont-3 > div > img:hover,
+#cont-4 > div > img:hover,
+#cont-5 > div > img:hover,
+#cont-6 > div > img:hover,
+#cont-7 > div > img:hover,
+#cont-8 > div > img:hover,
+#cont-9 > div > img:hover,
+#cont-10 > div > img:hover,
+#cont-11 > div > img:hover,
+#cont-12 > div > img:hover {
+  transform: scale(1.03);
+}
+
+#cont-1 > div > p,
+#cont-2 > div > p,
+#cont-3 > div > p,
+#cont-4 > div > p,
+#cont-5 > div > p,
+#cont-6 > div > p,
+#cont-7 > div > p,
+#cont-8 > div > p,
+#cont-9 > div > p,
+#cont-10 > div > p,
+#cont-11 > div > p,
+#cont-12 > div > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+#cont-1 > div > button,
+#cont-2 > div > button,
+#cont-3 > div > button,
+#cont-4 > div > button,
+#cont-5 > div > button,
+#cont-6 > div > button,
+#cont-7 > div > button,
+#cont-8 > div > button,
+#cont-9 > div > button,
+#cont-10 > div > button,
+#cont-11 > div > button,
+#cont-12 > div > button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e4002b;
+  color: white;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: #202124;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  bottom: -11150px;
+}
+
+#fcont-1 {
+  width: 65%;
+  padding-left: 200px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  text-align: left;
+}
+
+#fcont-1 > p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+#fcont-2 {
+  width: 93%;
+  padding-left: 160px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+#fcont-2 > div > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#fcont-2 > div > p {
+  margin-bottom: 20px;
+}
+
+#fcont-3 {
+  margin-left: 150px;
+  width: 50%;
+  height: 100px;
+  position: relative;
+}
+
+#fcont-3 > div:first-child {
+  width: 40%;
+  display: flex;
+}
+
+#fcont-3 > div:first-child > a {
+  text-decoration: none;
+  color: white;
+  padding-right: 50px;
+  border-right: 1px solid grey;
+  margin-left: 5px;
+}
+
+#fcont-3 > div:first-child > a:last-child {
+  border: none;
+}
+
+#fcont-3 > div:last-child {
+  width: 50%;
+  position: absolute;
+  bottom: 50px;
+  left: 600px;
+}
