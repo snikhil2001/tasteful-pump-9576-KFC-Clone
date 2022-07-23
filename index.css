@@ -370,7 +370,7 @@
   margin-bottom: 25px;
 }
 
-#video-1 > div > div:nth-child(2) > button {
+#video-1 > div > div:nth-child(2) > a > button {
   padding: 20px 60px;
   border: none;
   border-radius: 40px;
