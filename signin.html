@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="signin.css" />
+    <title>SignIn Page</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <img
+        src="https://sage-dolphin-365e39.netlify.app/images/nav.jpeg"
+        alt=""
+      />
+      <a href="index.html">
+        <img
+          src="https://sage-dolphin-365e39.netlify.app/images/nav1.jpeg"
+          alt=""
+      /></a>
+      <a href="#">Menu</a>
+      <a href="#">Careers</a>
+      <a href="#">About</a>
+      <a href="#"><button>Start Order</button></a>
+      <a href="signup.html"><i class="fa-solid fa-circle-user"></i></a>
+      <a><i class="fas fa-shopping-bag fa-2x"></i></a>
+    </div>
+
+    <div id="location">
+      <a href=""><i class="fas fa-map-marker-alt"></i></a>
+      <p>Start an order for pickup or delivery</p>
+    </div>
+
+    <div id="container">
+      <div>
+        <img
+          src="https://sage-dolphin-365e39.netlify.app/images/Screenshot%202022-01-17%20201023.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <h1>SIGN IN TO YOUR KFC ACCOUNT</h1>
+        <form action="" id="loginform">
+          <input type="email" name="" id="email" placeholder="Email" />
+          <input type="password" name="" id="pass" placeholder="Password" />
+          <input type="submit" name="" id="" value="Log In" />
+        </form>
+        <p>
+          By signing into the application or proceeding as a guest, you agree to
+          our Privacy Policy and Terms of Use
+        </p>
+        <h3>Don't Have an account? <a href="signup.html">Join Now</a></h3>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let form = document.querySelector("#loginform");
+  form.addEventListener("submit", loginfunc);
+  let getsignupArr = JSON.parse(localStorage.getItem("signupdata")) || [];
+
+  function loginfunc(e) {
+    e.preventDefault();
+    let loginobj = {
+      useremail: form.email.value,
+      userpass: form.pass.value,
+    };
+
+    if (loginobj.useremail == "" || loginobj.userpass == "") {
+      alert("Please fill all the details");
+      return;
+    }
+
+    getsignupArr.forEach(function (ele) {
+      if (
+        ele.useremail == loginobj.useremail &&
+        ele.userpass == loginobj.userpass
+      ) {
+        alert("Login Successful");
+        window.location.href = "";
+        return;
+      }
+      alert("Wrong email or password");
+    });
+  }
+</script>
