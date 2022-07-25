@@ -177,7 +177,7 @@
   font-size: 25px;
 }
 
-#startorder > button {
+#startorder > a > button {
   padding: 20px 50px;
   background-color: white;
   color: black;
