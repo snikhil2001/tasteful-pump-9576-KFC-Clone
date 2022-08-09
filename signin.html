@@ -77,14 +77,14 @@
 
     getsignupArr.forEach(function (ele) {
       if (
-        ele.useremail !== loginobj.useremail &&
-        ele.userpass !== loginobj.userpass
+        ele.useremail == loginobj.useremail &&
+        ele.userpass == loginobj.userpass
       ) {
-        alert("Wrong email or password");
-        return;
-      } else {
         alert("Login Successful");
         document.location.href = "index.html";
+        return;
+      } else {
+        alert("Wrong email or password");
       }
     });
   }
